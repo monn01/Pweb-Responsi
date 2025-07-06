@@ -1,0 +1,107 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Container */
+.container {
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(37, 160, 133, 0.1);
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #00ffc8;
+}
+
+/* Timer display */
+.result {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Button container */
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Button style */
+.button button {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #00ffc8;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.3);
+}
+
+.button button:hover {
+  background-color: #00d6aa;
+  transform: scale(1.05);
+}
+
+/* Log container */
+.log-container {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+/* Log title */
+.log-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00ffc8;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 6px;
+}
+
+/* Log list */
+#time-log {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+#time-log li {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 5px;
+  background-color: #1f1f1f;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
