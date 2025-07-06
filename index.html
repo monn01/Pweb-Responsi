@@ -1,11 +1,3 @@
-<?php
-$logs = [];
-if (file_exists('log.json')) {
-    $logs = json_decode(file_get_contents('log.json'), true);
-    if (!is_array($logs)) $logs = [];
-}
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -34,9 +26,6 @@ if (file_exists('log.json')) {
         <h2>📜 Log Waktu</h2>
 
         <ul id="time-log">
-        <?php foreach ($logs as $log): ?>
-        <li><?= htmlspecialchars($log) ?></li>
-        <?php endforeach; ?>
       </ul>
       
     </div>
